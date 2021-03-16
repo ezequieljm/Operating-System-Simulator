@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#contenedor-principal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedor-procesos{
+    padding: 10px;
+    width: 300px;
+    /* max-width: 400px;
+    min-width: 400px;
+    min-height: 410px; */
+    height: 410px;
+    border: solid 1px black;
+    overflow: auto;
+}
+
+#contenedor-formulario{
+    padding: 10px;
+    width: 500px;
+    /* max-width: 400px;
+    min-width: 400px;
+    min-height: 410px; */
+    height: 410px;
+    border: solid 1px black;
+}
+
+#contenedor-formulario-proceso{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    /* border: solid 1px black; */
+}
+
+#parte-botones{
+    margin: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#panel-de-control{
+    max-width: 100%;
+    min-height: 15%;
+    border: solid 1px black;
+}
+
+#simulador{
+    max-width: 100%;
+    min-height: 85%;
+    border: solid 1px black;
+}
+
+
+/*FORMULARIO DE OPCION ALEATORIO O MANUAL */
+
+#formulario-opcion{
+   /*  border: solid 1px black;*/
+}
+
+
+#contenedor-titulos-formulario{
+    width: 700px;
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#titulo-Simulador-G9SO{
+    text-align: center;
+}
+
+
+
+
+/*  estilos para la interface*/
+
+#contenedor-dos{
+    width: 90%;
+    height: 90%;
+    border: solid 2px green;
+    overflow: auto;
+}
+
+.contenedor-evento-estado{
+    border: solid 2px black;
+}
+
+.contenedor-datos-proceso{
+    border: solid 2px blue;
+}
+
+.contenedor-datos-memoria{
+    border: solid 2px green;
+}
+
+.contenedor-datos-cpu{
+    border: solid 2px red;
+}
+
+#cont-particiones-panel{
+    display: flex;
+    overflow: auto;
+}
+
+#cont-particiones-panel > div{
+    min-width: 200px;
+}
+
+#cont-procesos-panel{
+    display: flex;
+    overflow: auto;
+}
+#cont-procesos-panel > div{
+    min-width: 210px;
+}
+
+#lista-proceso-card-panel{
+    display: flex;
+    overflow: auto;
+}
+
+#lista-proceso-card-panel > div {
+    min-width: 250px;
+}
+
+#cola-de-procesos-listos{
+    border: solid 2px orange;
+}
+
+.cont-procesos-panel-listos{
+    display: flex;
+}
+/* COLOR DE LOS RADIO BUTTONS */
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:before,
+[type="radio"].with-gap:checked + span:after {
+  border: 2px solid #4caf50;
+}
+
+[type="radio"]:checked + span:after,
+[type="radio"].with-gap:checked + span:after {
+  background-color: #4caf50;
+}
+
+ 
+#boton-recargar{
+    margin-right: 9px;
+}

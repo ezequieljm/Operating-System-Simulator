@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Simulador</title>
+</head>
+
+  <body>
+
+    <section class="grey darken-4" id="contenedor-principal">
+      
+      <section  class="card-panel z-depth-5 blue darken-3" id="contenedor-titulos-formulario">
+
+        <h1 class="white-text h1" id="titulo-Simulador-G9SO">Simulador G9SO</h1>
+        <h5 class="white-text">Elije el modo del simulador</h5>
+
+        <ul>
+          <li class="white-text">ALEATORIO: Los procesos se generan de forma aleatoria (Predeterminado).</li>
+          <li class="white-text">MANUAL: Los procesos son agregados por el usuario.</li>
+        </ul>
+
+        <br>
+        <hr>
+
+        <form action="#" id="formulario-opcion">
+
+          <p>
+            <label>
+              <input  name="group1" type="radio" value="aleatorio" id="aleatorio" checked />
+              <span class="white-text">Aleatorio</span>
+            </label>
+          </p>
+
+          <p>
+            <label>
+              <input  name="group1" type="radio" value="manual" id="manual"/>
+              <span class="white-text">Manual</span>
+
+            </label>
+          </p>
+
+          <button type="button" class="btn green" id="boton-ok">Continuar</button>
+
+          </form> 
+
+      </section>
+
+    </section>
+
+
+    <!--  ENLACE A LOS MODULOS JAVASCRIPT-->
+    <script src="modulos/renderizar-simulador.js"></script>
+    <script src="modulos/simular-procesos-usuario.js"></script>
+    <script src="modulos/simular-procesos-aleatorios.js"></script>
+    <script src="modulos/visualizar-proceso.js"></script>
+    <script src="modulos/formulario-procesos.js"></script>
+    <script src="modulos/card-panel-procesos.js"></script>
+    <script src="modulos/formulario.js"></script>
+    <script src="modulos/abs.js"></script>
+    <script src="modulos/kernel.js"></script>
+    <script src="main.js"></script>
+  </body>
+
+</html>
